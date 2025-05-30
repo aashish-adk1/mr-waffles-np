@@ -521,9 +521,9 @@ const MrWafflesNepal = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-                12
+                1
               </div>
-              <p className="text-gray-600 font-medium">Locations</p>
+              <p className="text-gray-600 font-medium">Location</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
@@ -533,9 +533,9 @@ const MrWafflesNepal = () => {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
-                3
+                1
               </div>
-              <p className="text-gray-600 font-medium">Cities</p>
+              <p className="text-gray-600 font-medium">City</p>
             </div>
           </div>
         </div>
