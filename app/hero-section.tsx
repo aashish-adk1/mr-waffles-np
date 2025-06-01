@@ -1,14 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import {
-  ArrowRight,
-  MapPin,
-    Award,
-
-  X,
-  
-} from "lucide-react";
+import { ArrowRight, MapPin, Award, X } from "lucide-react";
 
 const MrWafflesNepal = () => {
   const [, setActiveSection] = useState("home");
@@ -104,7 +97,6 @@ const MrWafflesNepal = () => {
       description: "Tropical mango with creamy texture",
     },
   ];
-
 
   const miniPancakes = [
     {
@@ -541,6 +533,127 @@ const MrWafflesNepal = () => {
         </div>
       </section>
 
+      {/* About Us Section */}
+      <section
+        id="about"
+        className="py-20 bg-gradient-to-br from-amber-50 to-orange-50"
+      >
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Text Content - Left Side */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-5xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent mb-6">
+                  About Mr. Waffles Nepal
+                </h2>
+                <div className="w-20 h-1 bg-gradient-to-r from-orange-500 to-amber-500 rounded-full mb-8"></div>
+              </div>
+
+              <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+                <p>
+                  Born from a passion for authentic Belgian waffles and a love
+                  for Nepali culture, Mr. Waffles Nepal brings together the best
+                  of both worlds. Our journey started with a simple dream: to
+                  create the perfect waffle experience in the heart of the
+                  Himalayas.
+                </p>
+
+                <p>
+                  What makes us special is our commitment to quality and
+                  innovation. We use traditional Belgian techniques combined
+                  with locally sourced Himalayan ingredients to create unique
+                  flavors that you won&apos;t find anywhere else. From our
+                  signature Himalayan Honey Waffles to our creative fusion
+                  toppings, every bite tells a story.
+                </p>
+
+                <p>
+                  Our team of passionate chefs works tirelessly to ensure that
+                  each waffle is made fresh to order, crispy on the outside and
+                  fluffy on the inside. We believe that great food brings people
+                  toget&apos;er, and that&apos;s exactly what we aim to do - one
+                  delicious waffle at a time.
+                </p>
+              </div>
+
+              {/* Key Features */}
+              <div className="grid grid-cols-2 gap-6 pt-8">
+                <div className="bg-white/50 rounded-xl p-6 border border-orange-200/30">
+                  <div className="text-3xl font-bold text-orange-600 mb-2">
+                    2019
+                  </div>
+                  <p className="text-gray-600 font-medium">
+                    Founded in Kathmandu
+                  </p>
+                </div>
+                <div className="bg-white/50 rounded-xl p-6 border border-orange-200/30">
+                  <div className="text-3xl font-bold text-orange-600 mb-2">
+                    100%
+                  </div>
+                  <p className="text-gray-600 font-medium">
+                    Fresh & Made to Order
+                  </p>
+                </div>
+                <div className="bg-white/50 rounded-xl p-6 border border-orange-200/30">
+                  <div className="text-3xl font-bold text-orange-600 mb-2">
+                    Local
+                  </div>
+                  <p className="text-gray-600 font-medium">
+                    Himalayan Ingredients
+                  </p>
+                </div>
+                <div className="bg-white/50 rounded-xl p-6 border border-orange-200/30">
+                  <div className="text-3xl font-bold text-orange-600 mb-2">
+                    Belgian
+                  </div>
+                  <p className="text-gray-600 font-medium">
+                    Authentic Techniques
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Image - Right Side */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nq5tdwWfwQ7PKhzacas3XM0xuD7BWA-hgySMpJCRhmVWygnnBEEac-ooHpGXRnqj5Qhj8kFWjNv3BnKfpROVCx0XNafrDf3dKrGeosLCf7olcULBJw_Q--_eTv5NGMyymJabPAviw=s1360-w1360-h1020-rw"
+                  alt="Mr. Waffles Nepal restaurant interior with fresh waffles"
+                  width={1360} // Set appropriate width based on your needs
+                  height={1020} // Set appropriate height based on your needs
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    console.log("Image failed to load, using fallback");
+                    (e.target as HTMLImageElement).src =
+                      "https://images.unsplash.com/photo-1568051243851-f9b136146e97?w=600&h=800&fit=crop";
+                  }}
+                />
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              </div>
+
+              {/* Floating elements */}
+              <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl border border-orange-200/30">
+                <div className="text-center">
+                  <div className="text-2xl mb-2">🧇</div>
+                  <div className="text-sm font-bold text-gray-900">
+                    Fresh Daily
+                  </div>
+                  <div className="text-xs text-gray-600">Since 2019</div>
+                </div>
+              </div>
+
+              <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-2xl p-6 shadow-xl">
+                <div className="text-center">
+                  <div className="text-lg font-bold">5000+</div>
+                  <div className="text-sm">Happy Customers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* New Items Section */}
       <section className="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-6">
@@ -577,7 +690,6 @@ const MrWafflesNepal = () => {
                   <p className="text-gray-600 leading-relaxed">
                     {item.shortDesc}
                   </p>
-                 
                 </div>
               </div>
             ))}
@@ -695,10 +807,6 @@ const MrWafflesNepal = () => {
         </div>
       </section>
 
-      
-
-     
-
       {/* Lightbox Modal */}
       {selectedItem && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
@@ -710,7 +818,7 @@ const MrWafflesNepal = () => {
               >
                 <X className="w-6 h-6" />
               </button>
-              
+
               <div className="relative h-80 md:h-96">
                 <Image
                   src={selectedItem.image}
@@ -721,7 +829,7 @@ const MrWafflesNepal = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-t-2xl"></div>
               </div>
-              
+
               <div className="p-8">
                 <h2 className="text-3xl font-bold text-gray-900 mb-4">
                   {selectedItem.title}
@@ -729,8 +837,6 @@ const MrWafflesNepal = () => {
                 <p className="text-gray-600 text-lg leading-relaxed">
                   {selectedItem.description}
                 </p>
-                
-               
               </div>
             </div>
           </div>
